@@ -5,9 +5,9 @@ import requests
 app = Flask(__name__)
 
 # API Keys
-OPEN_WEATHER_API_KEY = "YOUR_API"
-TOMTOM_API_KEY = "YOUR_API"
-GOOGLE_API_KEY = "YOUR_API"
+OPEN_WEATHER_API_KEY = "01fecea7c070babba3ef42c3cb86c9c2"
+TOMTOM_API_KEY = "NzorxSPM5oGMeLV4G8LCLXOgbTaj05mP"
+GOOGLE_API_KEY = "AIzaSyCtG6ml7N5iNN6cPKOz5li8mjewsNxSiH0"
 
 # Function to fetch weather forecast and city name
 def get_weather_forecast(lat, lon):
