@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>FedEx Dynamic Route Optimizer</title>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCtG6ml7N5iNN6cPKOz5li8mjewsNxSiH0&libraries=places"></script>
+    <script src="/static/js/app.js"></script>
+    <style>
+        #map {
+            height: 500px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        #results {
+            margin-top: 20px;
+            font-family: Arial, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>FedEx Dynamic Route Optimizer</h1>
+    <form id="route-form">
+        <input id="origin-input" type="text" placeholder="Enter origin location">
+        <input id="destination-input" type="text" placeholder="Enter destination location">
+        <input id="fuel-efficiency" type="number" placeholder="Fuel Efficiency (km/l)">
+        <input id="emission-factor" type="number" placeholder="Emission Factor (kg CO2/l)">
+        <button type="submit">Optimize Route</button>
+    </form>
+    <div id="map"></div>
+    <div id="results"></div>
+</body>
+</html>
